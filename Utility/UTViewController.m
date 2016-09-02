@@ -37,21 +37,6 @@
     stu.type = @(23);
     [stu gotoSchool];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    id obj1;
-    id obj2;
-    obj1 = [[NSString alloc] initWithFormat:@"%@", @"123"];
-    obj2 = [[NSString alloc] initWithFormat:@"%@", @"456"];
-    NSArray *array1 = [[NSArray alloc] initWithObjects:obj1, obj2, nil];
-    NSArray *array2 = [array1 copy];
-    NSMutableArray *marray2 = [NSMutableArray arrayWithArray:array1];
-    int x = 0;
-    
-    NSString *str1 = @"";
-    NSString *str2 = [str1 copy];
-    NSMutableArray *mstr1 = [str1 copy];
-    int y = 0;
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://ss1.baidu.com/8aQDcnSm2Q5IlBGlnYG/stat/tmp/qixilogo.png"]];
 }
 
 - (void)didReceiveMemoryWarning {

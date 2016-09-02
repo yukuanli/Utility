@@ -7,9 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#import "UTViewController.h"
+#import "TabBarProxy.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) TabBarProxy *tabBarProxy;
 
 @end
 
@@ -18,9 +20,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [self createWindow];
-    UTViewController *vc = [[UTViewController alloc] init];
-    self.window.rootViewController = vc;
+    [self loadUI];
+
     return YES;
 }
 
@@ -46,11 +47,12 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-- (void)createWindow
+- (void)loadUI
 {
-    if (self.window == nil) {
-        self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-        [self.window makeKeyAndVisible];
-    }
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window makeKeyAndVisible];
+    
+    self.tabBarProxy = [[TabBarProxy alloc] init];
+    self.window.rootViewController = self.tabBarProxy.tabBarController;
 }
 @end

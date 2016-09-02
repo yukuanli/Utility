@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface TabBarProxy : NSObject
 
+@property (nonatomic, strong, readonly) UITabBarController *tabBarController;
 @end
