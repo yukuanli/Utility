@@ -8,14 +8,18 @@
 
 #import "FirstViewController.h"
 
-@interface FirstViewController ()
-
+@interface FirstViewController () <UITableViewDelegate, UITableViewDataSource>
+{
+    UITableView *_tableView;
+}
 @end
 
 @implementation FirstViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    
     // Do any additional setup after loading the view.
 }
 
