@@ -17,6 +17,7 @@
 		20FF2D151D41AF1D007EA9F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20FF2D141D41AF1D007EA9F5 /* Assets.xcassets */; };
 		20FF2D251D41B0F4007EA9F5 /* WeakDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF2D221D41B0F4007EA9F5 /* WeakDelegate.m */; };
 		20FF2D261D41B0F4007EA9F5 /* WeakDelegateArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF2D241D41B0F4007EA9F5 /* WeakDelegateArray.m */; };
+		736A42F81D82B2D00065F3DB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 736A42F71D82B2D00065F3DB /* BaseViewController.m */; };
 		737F32771D791B9C00965B56 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 737F32761D791B9C00965B56 /* FirstViewController.m */; };
 		737F327A1D791BAC00965B56 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 737F32791D791BAC00965B56 /* SecondViewController.m */; };
 		737F327E1D79555E00965B56 /* TabBarProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 737F327D1D79555E00965B56 /* TabBarProxy.m */; };
@@ -43,6 +44,8 @@
 		20FF2D221D41B0F4007EA9F5 /* WeakDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakDelegate.m; sourceTree = "<group>"; };
 		20FF2D231D41B0F4007EA9F5 /* WeakDelegateArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakDelegateArray.h; sourceTree = "<group>"; };
 		20FF2D241D41B0F4007EA9F5 /* WeakDelegateArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakDelegateArray.m; sourceTree = "<group>"; };
+		736A42F61D82B2D00065F3DB /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		736A42F71D82B2D00065F3DB /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		737F32751D791B9C00965B56 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		737F32761D791B9C00965B56 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		737F32781D791BAC00965B56 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -138,9 +141,27 @@
 			path = WeakDelegate;
 			sourceTree = "<group>";
 		};
+		736A42F41D82B1DB0065F3DB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				736A42F51D82B2640065F3DB /* ViewController */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		736A42F51D82B2640065F3DB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				736A42F61D82B2D00065F3DB /* BaseViewController.h */,
+				736A42F71D82B2D00065F3DB /* BaseViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		737F32721D78499900965B56 /* Practice */ = {
 			isa = PBXGroup;
 			children = (
+				736A42F41D82B1DB0065F3DB /* Common */,
 				737F327B1D7954C600965B56 /* TabBar */,
 				737F32731D791B5F00965B56 /* Chapter1 */,
 				737F32741D791B5F00965B56 /* Chapter2 */,
@@ -253,6 +274,7 @@
 				20A433E61D474B38007F09B8 /* Student.m in Sources */,
 				737F32771D791B9C00965B56 /* FirstViewController.m in Sources */,
 				737F327A1D791BAC00965B56 /* SecondViewController.m in Sources */,
+				736A42F81D82B2D00065F3DB /* BaseViewController.m in Sources */,
 				20FF2D0D1D41AF1D007EA9F5 /* AppDelegate.m in Sources */,
 				737F327E1D79555E00965B56 /* TabBarProxy.m in Sources */,
 				20FF2D0A1D41AF1D007EA9F5 /* main.m in Sources */,
