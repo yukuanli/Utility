@@ -11,6 +11,7 @@
 		20A433E61D474B38007F09B8 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A433E51D474B38007F09B8 /* Student.m */; };
 		20A433EC1D474CF4007F09B8 /* Person+Life.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A433EB1D474CF4007F09B8 /* Person+Life.m */; };
 		20A433F21D475317007F09B8 /* Person+History.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A433F11D475317007F09B8 /* Person+History.m */; };
+		20D70B3F1D9FAA150093BE4E /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70B3E1D9FAA150093BE4E /* RunLoopViewController.m */; };
 		20FF2D0A1D41AF1D007EA9F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF2D091D41AF1D007EA9F5 /* main.m */; };
 		20FF2D0D1D41AF1D007EA9F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF2D0C1D41AF1D007EA9F5 /* AppDelegate.m */; };
 		20FF2D101D41AF1D007EA9F5 /* UTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF2D0F1D41AF1D007EA9F5 /* UTViewController.m */; };
@@ -32,6 +33,9 @@
 		20A433EB1D474CF4007F09B8 /* Person+Life.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Person+Life.m"; path = "Test/Person+Life.m"; sourceTree = "<group>"; };
 		20A433F01D475317007F09B8 /* Person+History.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Person+History.h"; path = "Test/Person+History.h"; sourceTree = "<group>"; };
 		20A433F11D475317007F09B8 /* Person+History.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Person+History.m"; path = "Test/Person+History.m"; sourceTree = "<group>"; };
+		20D70B3B1D9FA3C30093BE4E /* CommonDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDef.h; sourceTree = "<group>"; };
+		20D70B3D1D9FAA150093BE4E /* RunLoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopViewController.h; sourceTree = "<group>"; };
+		20D70B3E1D9FAA150093BE4E /* RunLoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopViewController.m; sourceTree = "<group>"; };
 		20FF2D051D41AF1D007EA9F5 /* Utility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Utility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20FF2D091D41AF1D007EA9F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20FF2D0B1D41AF1D007EA9F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -79,6 +83,15 @@
 			);
 			name = Test;
 			path = Base;
+			sourceTree = "<group>";
+		};
+		20D70B3C1D9FA9ED0093BE4E /* NSRunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				20D70B3D1D9FAA150093BE4E /* RunLoopViewController.h */,
+				20D70B3E1D9FAA150093BE4E /* RunLoopViewController.m */,
+			);
+			path = NSRunLoop;
 			sourceTree = "<group>";
 		};
 		20FF2CFC1D41AF1D007EA9F5 = {
@@ -144,6 +157,7 @@
 		736A42F41D82B1DB0065F3DB /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				20D70B3B1D9FA3C30093BE4E /* CommonDef.h */,
 				736A42F51D82B2640065F3DB /* ViewController */,
 			);
 			path = Common;
@@ -172,6 +186,7 @@
 		737F32731D791B5F00965B56 /* Chapter1 */ = {
 			isa = PBXGroup;
 			children = (
+				20D70B3C1D9FA9ED0093BE4E /* NSRunLoop */,
 				737F32751D791B9C00965B56 /* FirstViewController.h */,
 				737F32761D791B9C00965B56 /* FirstViewController.m */,
 			);
@@ -265,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D70B3F1D9FAA150093BE4E /* RunLoopViewController.m in Sources */,
 				20A433E21D474AF2007F09B8 /* Person.m in Sources */,
 				20FF2D251D41B0F4007EA9F5 /* WeakDelegate.m in Sources */,
 				20A433EC1D474CF4007F09B8 /* Person+Life.m in Sources */,

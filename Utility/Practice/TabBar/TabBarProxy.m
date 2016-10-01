@@ -28,14 +28,14 @@
 
 - (void)loadViewControllers
 {
-    FirstViewController *first = [[FirstViewController alloc] init];
-    first.title = @"chapter1";
+    UINavigationController *firstNav = [[UINavigationController alloc] initWithRootViewController:[[FirstViewController alloc] init]];
+    firstNav.title = @"chapter1";
     
-    SecondViewController *second = [[SecondViewController alloc] init];
-    second.title = @"chapter2";
+    UINavigationController *secondNav = [[UINavigationController alloc] initWithRootViewController:[[SecondViewController alloc] init]];
+    secondNav.title = @"chapter2";
     
     _tabBarController = [[UITabBarController alloc] init];
-    _tabBarController.viewControllers = @[first, second];
+    _tabBarController.viewControllers = @[firstNav, secondNav];
 }
 
 @end
