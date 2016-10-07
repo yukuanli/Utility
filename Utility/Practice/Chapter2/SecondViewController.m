@@ -7,15 +7,28 @@
 //
 
 #import "SecondViewController.h"
+#import "CommonDef.h"
 
-@interface SecondViewController ()
+static UTItem sections[] = {
+    {@"NSUrlConnection", @"UrlConnectionViewController"}
+};
 
+static const NSString *cellReuseId = @"Chapter2_Cell";
+
+@interface SecondViewController () <UITableViewDelegate, UITableViewDataSource>
+{
+    UITableView *_tableView;
+}
 @end
 
 @implementation SecondViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    _tableView.dataSource = self;
+    _tableView.delegate = self;
+    [self.view addSubview:_tableView];
     // Do any additional setup after loading the view.
 }
 
@@ -23,7 +36,32 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma mark UITableViewDelegate
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    unsigned int s = sizeof(sections) / sizeof(UTItem);
+    return sizeof(sections) / sizeof(UTItem);
+}
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellReuseId];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellReuseId];
+        cell.textLabel.text = sections[indexPath.row].itemName;
+    }
+    
+    return cell;
+}
+
+#pragma mark UITableViewDataSource
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *vcClsName = sections[indexPath.row].vcClsName;
+    Class vcCls = NSClassFromString(vcClsName);
+    UIViewController *vc = [[vcCls alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 /*
 #pragma mark - Navigation
 

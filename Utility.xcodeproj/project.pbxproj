@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		209D40691DA795E400F5023A /* UrlConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209D40681DA795E400F5023A /* UrlConnectionViewController.m */; };
 		20A433E21D474AF2007F09B8 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A433E11D474AF2007F09B8 /* Person.m */; };
 		20A433E61D474B38007F09B8 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A433E51D474B38007F09B8 /* Student.m */; };
 		20A433EC1D474CF4007F09B8 /* Person+Life.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A433EB1D474CF4007F09B8 /* Person+Life.m */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		209D40671DA795E400F5023A /* UrlConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrlConnectionViewController.h; sourceTree = "<group>"; };
+		209D40681DA795E400F5023A /* UrlConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrlConnectionViewController.m; sourceTree = "<group>"; };
 		20A433E01D474AF2007F09B8 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Test/Person.h; sourceTree = "<group>"; };
 		20A433E11D474AF2007F09B8 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Test/Person.m; sourceTree = "<group>"; };
 		20A433E41D474B38007F09B8 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Student.h; path = Test/Student.h; sourceTree = "<group>"; };
@@ -69,6 +72,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		209D40661DA795AE00F5023A /* NSUrlConnection */ = {
+			isa = PBXGroup;
+			children = (
+				209D40671DA795E400F5023A /* UrlConnectionViewController.h */,
+				209D40681DA795E400F5023A /* UrlConnectionViewController.m */,
+			);
+			path = NSUrlConnection;
+			sourceTree = "<group>";
+		};
 		20A433E31D474AF8007F09B8 /* Test */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +208,7 @@
 		737F32741D791B5F00965B56 /* Chapter2 */ = {
 			isa = PBXGroup;
 			children = (
+				209D40661DA795AE00F5023A /* NSUrlConnection */,
 				737F32781D791BAC00965B56 /* SecondViewController.h */,
 				737F32791D791BAC00965B56 /* SecondViewController.m */,
 			);
@@ -280,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				209D40691DA795E400F5023A /* UrlConnectionViewController.m in Sources */,
 				20D70B3F1D9FAA150093BE4E /* RunLoopViewController.m in Sources */,
 				20A433E21D474AF2007F09B8 /* Person.m in Sources */,
 				20FF2D251D41B0F4007EA9F5 /* WeakDelegate.m in Sources */,
