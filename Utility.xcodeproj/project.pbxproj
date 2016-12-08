@@ -12,6 +12,8 @@
 		20A433E61D474B38007F09B8 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A433E51D474B38007F09B8 /* Student.m */; };
 		20A433EC1D474CF4007F09B8 /* Person+Life.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A433EB1D474CF4007F09B8 /* Person+Life.m */; };
 		20A433F21D475317007F09B8 /* Person+History.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A433F11D475317007F09B8 /* Person+History.m */; };
+		20BCDC5B1DF97DCE00FE6725 /* HMAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BCDC5A1DF97DCE00FE6725 /* HMAVPlayerViewController.m */; };
+		20BCDC5E1DF97DFE00FE6725 /* HMPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BCDC5D1DF97DFE00FE6725 /* HMPlayerView.m */; };
 		20D70B3F1D9FAA150093BE4E /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70B3E1D9FAA150093BE4E /* RunLoopViewController.m */; };
 		20FF2D0A1D41AF1D007EA9F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF2D091D41AF1D007EA9F5 /* main.m */; };
 		20FF2D0D1D41AF1D007EA9F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF2D0C1D41AF1D007EA9F5 /* AppDelegate.m */; };
@@ -36,6 +38,10 @@
 		20A433EB1D474CF4007F09B8 /* Person+Life.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Person+Life.m"; path = "Test/Person+Life.m"; sourceTree = "<group>"; };
 		20A433F01D475317007F09B8 /* Person+History.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Person+History.h"; path = "Test/Person+History.h"; sourceTree = "<group>"; };
 		20A433F11D475317007F09B8 /* Person+History.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Person+History.m"; path = "Test/Person+History.m"; sourceTree = "<group>"; };
+		20BCDC591DF97DCE00FE6725 /* HMAVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMAVPlayerViewController.h; sourceTree = "<group>"; };
+		20BCDC5A1DF97DCE00FE6725 /* HMAVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMAVPlayerViewController.m; sourceTree = "<group>"; };
+		20BCDC5C1DF97DFE00FE6725 /* HMPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPlayerView.h; sourceTree = "<group>"; };
+		20BCDC5D1DF97DFE00FE6725 /* HMPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPlayerView.m; sourceTree = "<group>"; };
 		20D70B3B1D9FA3C30093BE4E /* CommonDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDef.h; sourceTree = "<group>"; };
 		20D70B3D1D9FAA150093BE4E /* RunLoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopViewController.h; sourceTree = "<group>"; };
 		20D70B3E1D9FAA150093BE4E /* RunLoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopViewController.m; sourceTree = "<group>"; };
@@ -95,6 +101,17 @@
 			);
 			name = Test;
 			path = Base;
+			sourceTree = "<group>";
+		};
+		20BCDC581DF97D4000FE6725 /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				20BCDC591DF97DCE00FE6725 /* HMAVPlayerViewController.h */,
+				20BCDC5A1DF97DCE00FE6725 /* HMAVPlayerViewController.m */,
+				20BCDC5C1DF97DFE00FE6725 /* HMPlayerView.h */,
+				20BCDC5D1DF97DFE00FE6725 /* HMPlayerView.m */,
+			);
+			path = AVPlayer;
 			sourceTree = "<group>";
 		};
 		20D70B3C1D9FA9ED0093BE4E /* NSRunLoop */ = {
@@ -208,6 +225,7 @@
 		737F32741D791B5F00965B56 /* Chapter2 */ = {
 			isa = PBXGroup;
 			children = (
+				20BCDC581DF97D4000FE6725 /* AVPlayer */,
 				209D40661DA795AE00F5023A /* NSUrlConnection */,
 				737F32781D791BAC00965B56 /* SecondViewController.h */,
 				737F32791D791BAC00965B56 /* SecondViewController.m */,
@@ -300,12 +318,14 @@
 				20A433EC1D474CF4007F09B8 /* Person+Life.m in Sources */,
 				20A433F21D475317007F09B8 /* Person+History.m in Sources */,
 				20FF2D261D41B0F4007EA9F5 /* WeakDelegateArray.m in Sources */,
+				20BCDC5E1DF97DFE00FE6725 /* HMPlayerView.m in Sources */,
 				20FF2D101D41AF1D007EA9F5 /* UTViewController.m in Sources */,
 				20A433E61D474B38007F09B8 /* Student.m in Sources */,
 				737F32771D791B9C00965B56 /* FirstViewController.m in Sources */,
 				737F327A1D791BAC00965B56 /* SecondViewController.m in Sources */,
 				736A42F81D82B2D00065F3DB /* BaseViewController.m in Sources */,
 				20FF2D0D1D41AF1D007EA9F5 /* AppDelegate.m in Sources */,
+				20BCDC5B1DF97DCE00FE6725 /* HMAVPlayerViewController.m in Sources */,
 				737F327E1D79555E00965B56 /* TabBarProxy.m in Sources */,
 				20FF2D0A1D41AF1D007EA9F5 /* main.m in Sources */,
 			);
