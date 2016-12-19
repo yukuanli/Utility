@@ -10,7 +10,8 @@
 #import "CommonDef.h"
 
 static UTItem sections[] = {
-    {@"NSUrlConnection", @"UrlConnectionViewController"}
+    {@"NSUrlConnection", @"UrlConnectionViewController"},
+    {@"AVPlayer", @"HMAVPlayerViewController"}
 };
 
 static const NSString *cellReuseId = @"Chapter2_Cell";

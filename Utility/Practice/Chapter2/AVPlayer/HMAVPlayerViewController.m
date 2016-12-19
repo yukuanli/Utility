@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) AVPlayerItem *playerItem;
 @property (nonatomic, strong) AVPlayer *player;
+@property (nonatomic, strong) HMPlayerView *playerView;
 
 @end
 
@@ -20,12 +21,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     
-    NSURL *videoUrl = [NSURL URLWithString:@""];
+    NSURL *videoUrl = [NSURL URLWithString:@"http://static.tripbe.com/videofiles/20121214/9533522808.f4v.mp4"];
     self.playerItem = [AVPlayerItem playerItemWithURL:videoUrl];
     [self.playerItem addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
     [self.playerItem addObserver:self forKeyPath:@"loadedTimeRanges" options:NSKeyValueObservingOptionNew context:nil];
+    
     self.player = [AVPlayer playerWithPlayerItem:self.playerItem];
+    
+    self.playerView = [[HMPlayerView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:self.playerView];
+    self.playerView.player = self.player;
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(moviePlayDidEnd:) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
     // Do any additional setup after loading the view.
 }
@@ -34,6 +42,18 @@
 {
     
 }
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
+{
+    AVPlayerItem *playerItem = (AVPlayerItem *)object;
+    
+    if ([keyPath isEqualToString:@"status"]) {
+        if ([playerItem status] == AVPlayerItemStatusReadyToPlay) {
+            
+        }
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
