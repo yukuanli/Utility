@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 
-@interface FirstViewController : BaseViewController
+@class Person;
 
+@interface FirstViewController : BaseViewController
+{
+    __strong Person *_man;
+}
 @end

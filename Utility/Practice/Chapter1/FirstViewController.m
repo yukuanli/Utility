@@ -8,6 +8,8 @@
 
 #import "FirstViewController.h"
 #import "CommonDef.h"
+#import "Person.h"
+#import "PersonViewController.h"
 
 static UTItem sections[] = {
     {@"NSRunLoop", @"RunLoopViewController"}
@@ -18,7 +20,11 @@ static const NSString *cellReuseId = @"Chapter1_Cell";
 @interface FirstViewController () <UITableViewDelegate, UITableViewDataSource>
 {
     UITableView *_tableView;
+    Person *_student;
+    
 }
+
+@property (nonatomic, strong) Person *teacher;
 @end
 
 @implementation FirstViewController
@@ -29,8 +35,55 @@ static const NSString *cellReuseId = @"Chapter1_Cell";
     _tableView.dataSource = self;
     _tableView.delegate = self;
     [self.view addSubview:_tableView];
+    
+    /*Person *p = [[Person alloc] init];
+    NSMutableString *name = [[NSMutableString alloc] initWithString:@"hemanli"];
+    p.name = name;
+    [name replaceCharactersInRange:NSMakeRange(5, 2) withString:@""];*/
+    
+    
+    
+    /*NSString *list = [[NSString alloc] initWithFormat:@"%@, %@", @"23", nil, nil];
+    NSString *l2 = [list copy];
+    NSLog(@"%p, %p", list, l2);
+    int x = 0;*/
     // Do any additional setup after loading the view.
+    
+        
+    /*_man = [[Person alloc] init];
+    self.teacher = [[Person alloc] init];
+    Person *onePerson = _man;
+    [UIView animateWithDuration:0.25 animations:^{
+        
+        onePerson.name = @"2";
+    }];*/
+    
+    /*NSArray *array = [[NSArray alloc] initWithObjects:@"1", @"3", nil];
+    
+    NSLog(@"class of NSArray:%@", [NSArray class]);
+    NSLog(@"class of array:%@", [array class]);
+    
+    NSMutableArray *marray = [[NSMutableArray alloc] initWithObjects:@"1", @"3", nil];
+    NSLog(@"class of NSMutableArray:%@", [NSMutableArray class]);
+    NSLog(@"class of marray:%@", [marray class]);
+    
+    NSMutableArray *emptyArr = [NSMutableArray array];
+    NSLog(@"class of emptyArr:%@", [emptyArr class]);
+    
+    NSArray *uninitArr = [NSArray alloc];
+    NSLog(@"class of uninitArr:%@", [uninitArr class]);*/
+    
+    
+    NSNumber *num = [NSNumber alloc];
+    NSArray *uninitArr1 = [NSArray alloc];
+    
+    NSArray *uninitArr2 = [NSArray alloc];
+    
+    NSArray *uninitArr3 = [NSArray alloc];
+    
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

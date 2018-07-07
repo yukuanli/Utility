@@ -11,6 +11,8 @@
 #import "Person+Life.h"
 #import "Person+History.h"
 #import <objc/runtime.h>
+#import "SomeView.h"
+#import "SomeMgr.h"
 
 @interface UTViewController ()
 
@@ -36,6 +38,17 @@
     Student<NSNumber *> *stu = [[Student alloc] init];
     stu.type = @(23);
     [stu gotoSchool];
+    
+    SomeMgr *mgr = nil;
+    SomeView *someView = nil;
+    
+    
+    mgr.someView = someView;
+    
+    
+    mgr.someView = nil;
+    mgr = nil;
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 

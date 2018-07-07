@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20355BB71E63A31500509C06 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20355BB61E63A31500509C06 /* MyViewController.m */; };
+		20549B171E663B7D0000FF46 /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20549B161E663B7D0000FF46 /* PersonViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		206E5A961F4ACFE2003688ED /* SomeMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 206E5A951F4ACFE2003688ED /* SomeMgr.m */; };
+		206E5A991F4ACFFD003688ED /* SomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 206E5A981F4ACFFD003688ED /* SomeView.m */; };
 		209D40691DA795E400F5023A /* UrlConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209D40681DA795E400F5023A /* UrlConnectionViewController.m */; };
-		20A433E21D474AF2007F09B8 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A433E11D474AF2007F09B8 /* Person.m */; };
+		20A433E21D474AF2007F09B8 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A433E11D474AF2007F09B8 /* Person.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		20A433E61D474B38007F09B8 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A433E51D474B38007F09B8 /* Student.m */; };
 		20A433EC1D474CF4007F09B8 /* Person+Life.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A433EB1D474CF4007F09B8 /* Person+Life.m */; };
 		20A433F21D475317007F09B8 /* Person+History.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A433F11D475317007F09B8 /* Person+History.m */; };
 		20BCDC5B1DF97DCE00FE6725 /* HMAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BCDC5A1DF97DCE00FE6725 /* HMAVPlayerViewController.m */; };
 		20BCDC5E1DF97DFE00FE6725 /* HMPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BCDC5D1DF97DFE00FE6725 /* HMPlayerView.m */; };
+		20BCDC601E07E23000FE6725 /* Resource in Resources */ = {isa = PBXBuildFile; fileRef = 20BCDC5F1E07E23000FE6725 /* Resource */; };
 		20D70B3F1D9FAA150093BE4E /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D70B3E1D9FAA150093BE4E /* RunLoopViewController.m */; };
 		20FF2D0A1D41AF1D007EA9F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF2D091D41AF1D007EA9F5 /* main.m */; };
 		20FF2D0D1D41AF1D007EA9F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FF2D0C1D41AF1D007EA9F5 /* AppDelegate.m */; };
@@ -28,6 +33,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20355BB51E63A31500509C06 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		20355BB61E63A31500509C06 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		20549B151E663B7D0000FF46 /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
+		20549B161E663B7D0000FF46 /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
+		206E5A941F4ACFE2003688ED /* SomeMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SomeMgr.h; path = Test/SomeMgr.h; sourceTree = "<group>"; };
+		206E5A951F4ACFE2003688ED /* SomeMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SomeMgr.m; path = Test/SomeMgr.m; sourceTree = "<group>"; };
+		206E5A971F4ACFFD003688ED /* SomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SomeView.h; path = Test/SomeView.h; sourceTree = "<group>"; };
+		206E5A981F4ACFFD003688ED /* SomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SomeView.m; path = Test/SomeView.m; sourceTree = "<group>"; };
 		209D40671DA795E400F5023A /* UrlConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrlConnectionViewController.h; sourceTree = "<group>"; };
 		209D40681DA795E400F5023A /* UrlConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrlConnectionViewController.m; sourceTree = "<group>"; };
 		20A433E01D474AF2007F09B8 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Test/Person.h; sourceTree = "<group>"; };
@@ -42,6 +55,7 @@
 		20BCDC5A1DF97DCE00FE6725 /* HMAVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMAVPlayerViewController.m; sourceTree = "<group>"; };
 		20BCDC5C1DF97DFE00FE6725 /* HMPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPlayerView.h; sourceTree = "<group>"; };
 		20BCDC5D1DF97DFE00FE6725 /* HMPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPlayerView.m; sourceTree = "<group>"; };
+		20BCDC5F1E07E23000FE6725 /* Resource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resource; sourceTree = "<group>"; };
 		20D70B3B1D9FA3C30093BE4E /* CommonDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDef.h; sourceTree = "<group>"; };
 		20D70B3D1D9FAA150093BE4E /* RunLoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopViewController.h; sourceTree = "<group>"; };
 		20D70B3E1D9FAA150093BE4E /* RunLoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopViewController.m; sourceTree = "<group>"; };
@@ -98,6 +112,10 @@
 				20A433EB1D474CF4007F09B8 /* Person+Life.m */,
 				20A433F01D475317007F09B8 /* Person+History.h */,
 				20A433F11D475317007F09B8 /* Person+History.m */,
+				206E5A941F4ACFE2003688ED /* SomeMgr.h */,
+				206E5A951F4ACFE2003688ED /* SomeMgr.m */,
+				206E5A971F4ACFFD003688ED /* SomeView.h */,
+				206E5A981F4ACFFD003688ED /* SomeView.m */,
 			);
 			name = Test;
 			path = Base;
@@ -142,6 +160,7 @@
 		20FF2D071D41AF1D007EA9F5 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				20BCDC5F1E07E23000FE6725 /* Resource */,
 				737F32721D78499900965B56 /* Practice */,
 				20A433E31D474AF8007F09B8 /* Test */,
 				20FF2D1F1D41B08A007EA9F5 /* Base */,
@@ -218,6 +237,10 @@
 				20D70B3C1D9FA9ED0093BE4E /* NSRunLoop */,
 				737F32751D791B9C00965B56 /* FirstViewController.h */,
 				737F32761D791B9C00965B56 /* FirstViewController.m */,
+				20355BB51E63A31500509C06 /* MyViewController.h */,
+				20355BB61E63A31500509C06 /* MyViewController.m */,
+				20549B151E663B7D0000FF46 /* PersonViewController.h */,
+				20549B161E663B7D0000FF46 /* PersonViewController.m */,
 			);
 			path = Chapter1;
 			sourceTree = "<group>";
@@ -300,6 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20BCDC601E07E23000FE6725 /* Resource in Resources */,
 				20FF2D151D41AF1D007EA9F5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,18 +339,22 @@
 				20D70B3F1D9FAA150093BE4E /* RunLoopViewController.m in Sources */,
 				20A433E21D474AF2007F09B8 /* Person.m in Sources */,
 				20FF2D251D41B0F4007EA9F5 /* WeakDelegate.m in Sources */,
+				20549B171E663B7D0000FF46 /* PersonViewController.m in Sources */,
 				20A433EC1D474CF4007F09B8 /* Person+Life.m in Sources */,
 				20A433F21D475317007F09B8 /* Person+History.m in Sources */,
 				20FF2D261D41B0F4007EA9F5 /* WeakDelegateArray.m in Sources */,
 				20BCDC5E1DF97DFE00FE6725 /* HMPlayerView.m in Sources */,
 				20FF2D101D41AF1D007EA9F5 /* UTViewController.m in Sources */,
 				20A433E61D474B38007F09B8 /* Student.m in Sources */,
+				206E5A991F4ACFFD003688ED /* SomeView.m in Sources */,
 				737F32771D791B9C00965B56 /* FirstViewController.m in Sources */,
 				737F327A1D791BAC00965B56 /* SecondViewController.m in Sources */,
+				20355BB71E63A31500509C06 /* MyViewController.m in Sources */,
 				736A42F81D82B2D00065F3DB /* BaseViewController.m in Sources */,
 				20FF2D0D1D41AF1D007EA9F5 /* AppDelegate.m in Sources */,
 				20BCDC5B1DF97DCE00FE6725 /* HMAVPlayerViewController.m in Sources */,
 				737F327E1D79555E00965B56 /* TabBarProxy.m in Sources */,
+				206E5A961F4ACFE2003688ED /* SomeMgr.m in Sources */,
 				20FF2D0A1D41AF1D007EA9F5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
